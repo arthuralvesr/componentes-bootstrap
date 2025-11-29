@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100" data-bs-theme="dark">
       <div class="container">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -27,55 +27,47 @@
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Filmes</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Generos
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Ação</a></li>
-                <li><a class="dropdown-item" href="#">Comédia</a></li>
-                <li><a class="dropdown-item" href="#">Terror</a></li>
-                <li><a class="dropdown-item" href="#">Romance</a></li>
-                <li><a class="dropdown-item" href="#">Ficção científica</a></li>
-              </ul>
+              <a class="nav-link" href="filmes.html">Filmes</a>
             </li>
           </ul>
-          <!--  codigo do modal aqui^^  -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Launch demo modal
-            </button>
-
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header text-center">
-                    <h1 class="modal-title fs-5 w-100" id="exampleModalLabel">🎬Seleção🎬</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body centralizar">
-                    <div class="card" style="width: 18rem;">
-                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmJ0B4vQrJzvbtUiaKE3bifVYXJfdWi5OJqg&s" alt="banner do filme">
-                      <div class="card-body">
-                        <h5 class="card-title">Clube da Luta</h5>
-                        <p class="card-text">"Clube da Luta" é um thriller psicológico e drama satírico sobre um narrador desiludido e com insônia que, junto a um carismático vendedor de sabão, Tyler Durden, forma um clube secreto de luta como uma forma radical de terapia e crítica ao consumismo moderno</p>
-                        <a href="https://www.youtube.com/watch?v=eBKvlCf0B4g" class="btn btn-primary centralizar" target="_blank">Trailer</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          <!-- codigo do modal aqui^^ -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRanking">
+            Ranking IMDB
+          </button>
         </div>
       </div>
       </div>
     </nav>
     
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRanking" aria-labelledby="offcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">Ranking IMDB</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <strong>1° Clube da Luta</strong><br>
+                ⭐⭐⭐⭐⭐ (5.0)
+              </li>
+              <li class="list-group-item">
+                <strong>2° Interestelar</strong><br>
+                ⭐⭐⭐⭐⭐ (4.9)
+              </li>
+              <li class="list-group-item">
+                <strong>3° A Origem</strong><br>
+                ⭐⭐⭐⭐✰ (4.8)
+              </li>
+          </div>
+        </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+
+      const myModal = document.getElementById('myModal')
+      const myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+      })
+    </script>        
 </body>
 </html>
