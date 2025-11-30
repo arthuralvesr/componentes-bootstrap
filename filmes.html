@@ -1,154 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmes | DW1</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
-        img {
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-        }
-        .centralizar{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
-</head>
-<body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100" data-bs-theme="dark">
-      <div class="container">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="filmes.html">Filmes</a>
-            </li>
-          </ul>
-          <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRanking">
-            Ranking IMDB
-          </button>
-        </div>
-      </div>
-      </div>
-    </nav>
-    
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRanking" aria-labelledby="offcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasLabel">Ranking IMDB</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="list-group">
-              <li class="list-group-item">
-                <strong>1° Clube da Luta</strong><br>
-                ⭐⭐⭐⭐⭐ (5.0)
-              </li>
-              <li class="list-group-item">
-                <strong>2° Interestelar</strong><br>
-                ⭐⭐⭐⭐⭐ (4.9)
-              </li>
-              <li class="list-group-item">
-                <strong>3° A Origem</strong><br>
-                ⭐⭐⭐⭐✰ (4.8)
-              </li>
-          </div>
-        </div>
 
-    <div class="container my-4 d-flex justify-content-center gap-3 flex-wrap">
-      <h1><span class="fw-bold">Principais escolhas</span> da semana:</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmes | DW1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    img {
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .centralizar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-img-top {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100" data-bs-theme="dark">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">DW1 Filmes</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="filmes.html">Filmes</a>
+          </li>
+        </ul>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRanking">
+          Ranking IMDB
+        </button>
+      </div>
     </div>
 
-    <div class="container my-4">
-        <div class="row g-4 justify-content-center">
+  </nav>
 
-            <div class="col-md-4 d-flex justify-content-center text-center">
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/aorigem-capa.png" class="card-img-top" alt="Filme 1">
-                <div class="card-body">
-                <h5 class="card-title">A Origem</h5>
-                <p class="card-text">Um ladrão invade sonhos para roubar segredos, até aceitar sua missão mais perigosa: plantar uma ideia.</p>
-                <a href="" class="btn btn-primary" target="_blank">Ver trailer</a>
-                </div>
-            </div>
-            </div>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRanking" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasLabel">Ranking IMDB</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>1° Clube da Luta</strong><br>
+          ⭐⭐⭐⭐⭐ (5.0)
+        </li>
+        <li class="list-group-item">
+          <strong>2° Interestelar</strong><br>
+          ⭐⭐⭐⭐⭐ (4.9)
+        </li>
+        <li class="list-group-item">
+          <strong>3° A Origem</strong><br>
+          ⭐⭐⭐⭐✰ (4.8)
+        </li>
+      </ul>
+    </div>
+  </div>
 
-            <div class="col-md-4 d-flex justify-content-center text-center text-center">
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/interestelar-capa.png" class="card-img-top" alt="Filme 2">
-                <div class="card-body">
-                <h5 class="card-title">Interestelar</h5>
-                <p class="card-text">Exploradores viajam por um buraco de minhoca em busca de um novo lar para a humanidade.</p>
-                <a href="" class="btn btn-primary" target="_blank">Ver trailer</a>
-                </div>
-            </div>
-            </div>
+  <div class="container my-4 d-flex justify-content-center gap-3 flex-wrap">
+    <h1><span class="fw-bold">Principais escolhas</span> da semana:</h1>
+  </div>
 
-            <div class="col-md-4 d-flex justify-content-center text-center">
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/batman-capa.png" class="card-img-top" alt="Filme 3">
-                <div class="card-body">
-                <h5 class="card-title">Batman: O Cavaleiro das Trevas</h5>
-                <p class="card-text">Batman enfrenta o Coringa em uma batalha que redefine o caos e a moralidade de Gotham.</p>
-                <a href="" class="btn btn-primary" target="_blank">Ver trailer</a>
-                </div>
-            </div>
-            </div>
+  <div class="container my-4">
+    <div class="row g-4 justify-content-center">
 
+      <div class="col-md-4 d-flex justify-content-center text-center">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/aorigem-capa.png" class="card-img-top" alt="Filme 1">
+          <div class="card-body">
+            <h5 class="card-title">A Origem</h5>
+            <p class="card-text">Um ladrão invade sonhos para roubar segredos, até aceitar sua missão mais perigosa:
+              plantar uma ideia.</p>
+            <button type="button" class="btn btn-primary d-block mx-auto" data-bs-toggle="modal"
+              data-bs-target="#trailerModal" data-youtube-id="R_VX0e0PX90">
+              Ver trailer
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="row g-4 justify-content-center mt-1">
-
-            <div class="col-md-4 d-flex justify-content-center text-center">
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/matrix-capa.png" class="card-img-top" alt="Filme 4">
-                <div class="card-body">
-                <h5 class="card-title">Matrix (1999)</h5>
-                <p class="card-text">Neo descobre a verdade sobre a realidade e enfrenta máquinas que controlam a humanidade.</p>
-                <a href="" class="btn btn-primary" target="_blank">Ver trailer</a>
-                </div>
-            </div>
-            </div>
-
-            <div class="col-md-4 d-flex justify-content-center text-center">
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/senhordosaneis-capa.png" class="card-img-top" alt="Filme 5">
-                <div class="card-body">
-                <h5 class="card-title">O Senhor dos Anéis (2001)</h5>
-                <p class="card-text">Frodo embarca em uma jornada épica para destruir o Anel e impedir a ascensão de Sauron.</p>
-                <a href="" class="btn btn-primary" target="_blank">Ver trailer</a>
-                </div>
-            </div>
-            </div>
-
-            <div class="col-md-4 d-flex justify-content-center text-center">
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/clubedaluta-capa.png" class="card-img-top" alt="Filme 6">
-                <div class="card-body">
-                <h5 class="card-title">Clube da Luta (1999)</h5>
-                <p class="card-text">Um homem entediado cria um clube secreto que rapidamente sai do controle.</p>
-                <a href="" class="btn btn-primary" target="_blank">Ver trailer</a>
-                </div>
-            </div>
-            </div>
-
+      <div class="col-md-4 d-flex justify-content-center text-center">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/interestelar-capa.png" class="card-img-top" alt="Filme 2">
+          <div class="card-body">
+            <h5 class="card-title">Interestelar</h5>
+            <p class="card-text">Exploradores viajam por um buraco de minhoca em busca de um novo lar para a humanidade.
+            </p>
+            <button type="button" class="btn btn-primary d-block mx-auto" data-bs-toggle="modal"
+              data-bs-target="#trailerModal" data-youtube-id="i6avfCqKcQo">
+              Ver trailer
+            </button>
+          </div>
         </div>
+      </div>
+
+      <div class="col-md-4 d-flex justify-content-center text-center">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/batman-capa.png" class="card-img-top" alt="Filme 3">
+          <div class="card-body">
+            <h5 class="card-title">Batman: O Cavaleiro das Trevas</h5>
+            <p class="card-text">Batman enfrenta o Coringa em uma batalha que redefine o caos e a moralidade de Gotham.
+            </p>
+            <button type="button" class="btn btn-primary d-block mx-auto" data-bs-toggle="modal"
+              data-bs-target="#trailerModal" data-youtube-id="TQfATDZY5Y4">
+              Ver trailer
+            </button>
+          </div>
         </div>
+      </div>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </div>
 
-      const myModal = document.getElementById('myModal')
-      const myInput = document.getElementById('myInput')
+    <div class="row g-4 justify-content-center mt-1">
 
-      myModal.addEventListener('shown.bs.modal', () => {
-        myInput.focus()
-      })
-    </script>    
+      <div class="col-md-4 d-flex justify-content-center text-center">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/matrix-capa.png" class="card-img-top" alt="Filme 4">
+          <div class="card-body">
+            <h5 class="card-title">Matrix (1999)</h5>
+            <p class="card-text">Neo descobre a verdade sobre a realidade e enfrenta máquinas que controlam a
+              humanidade.</p>
+            <button type="button" class="btn btn-primary d-block mx-auto" data-bs-toggle="modal"
+              data-bs-target="#trailerModal" data-youtube-id="2KnZac176Hs">
+              Ver trailer
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex justify-content-center text-center">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/senhordosaneis-capa.png" class="card-img-top" alt="Filme 5">
+          <div class="card-body">
+            <h5 class="card-title">O Senhor dos Anéis (2001)</h5>
+            <p class="card-text">Frodo embarca em uma jornada épica para destruir o Anel e impedir a ascensão de Sauron.
+            </p>
+            <button type="button" class="btn btn-primary d-block mx-auto" data-bs-toggle="modal"
+              data-bs-target="#trailerModal" data-youtube-id="0i86oM1nHjM">
+              Ver trailer
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex justify-content-center text-center">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/clubedaluta-capa.png" class="card-img-top" alt="Filme 6">
+          <div class="card-body">
+            <h5 class="card-title">Clube da Luta (1999)</h5>
+            <p class="card-text">Um homem entediado cria um clube secreto que rapidamente sai do controle.</p>
+            <button type="button" class="btn btn-primary d-block mx-auto" data-bs-toggle="modal"
+              data-bs-target="#trailerModal" data-youtube-id="eBKvlCf0B4g">
+              Ver trailer
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="trailerModal" tabindex="-1" aria-labelledby="trailerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="trailerModalLabel">Assistir Trailer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9">
+            <iframe id="youtube-player" src="" title="Trailer do YouTube"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+
+  <script>
+    const trailerModal = document.getElementById('trailerModal');
+    const youtubePlayer = document.getElementById('youtube-player');
+    const YOUTUBE_BASE_URL = 'https://www.youtube.com/embed/';
+
+    trailerModal.addEventListener('show.bs.modal', function (event) {
+      const button = event.relatedTarget;
+      const videoId = button.getAttribute('data-youtube-id');
+
+      if (videoId) {
+        const finalUrl = YOUTUBE_BASE_URL + videoId + '?autoplay=1';
+        youtubePlayer.src = finalUrl;
+      }
+    });
+
+    trailerModal.addEventListener('hidden.bs.modal', function () {
+      youtubePlayer.src = '';
+    });
+  </script>
 </body>
+
 </html>

@@ -1,71 +1,87 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sobre Filmes | DW1 </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
-        img {
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-        }
-        .centralizar{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100" data-bs-theme="dark">
-      <div class="container">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="filmes.html">Filmes</a>
-            </li>
-          </ul>
-          <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRanking">
-            Ranking IMDB
-          </button>
-        </div>
-      </div>
-      </div>
-    </nav>
-    
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRanking" aria-labelledby="offcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasLabel">Ranking IMDB</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="list-group">
-              <li class="list-group-item">
-                <strong>1° Clube da Luta</strong><br>
-                ⭐⭐⭐⭐⭐ (5.0)
-              </li>
-              <li class="list-group-item">
-                <strong>2° Interestelar</strong><br>
-                ⭐⭐⭐⭐⭐ (4.9)
-              </li>
-              <li class="list-group-item">
-                <strong>3° A Origem</strong><br>
-                ⭐⭐⭐⭐✰ (4.8)
-              </li>
-          </div>
-        </div>
 
-    <div class="container my-4">
-      <div id="carouselExampleCaptions" class="carousel slide">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre Filmes | DW1 </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    img {
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .centralizar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100" data-bs-theme="dark">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">DW1 Filmes</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="filmes.html">Filmes</a>
+          </li>
+        </ul>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRanking">
+          Ranking IMDB
+        </button>
+      </div>
+    </div>
+
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRanking" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasLabel">Ranking IMDB</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>1° Clube da Luta</strong><br>
+          ⭐⭐⭐⭐⭐ (5.0)
+        </li>
+        <li class="list-group-item">
+          <strong>2° Interestelar</strong><br>
+          ⭐⭐⭐⭐⭐ (4.9)
+        </li>
+        <li class="list-group-item">
+          <strong>3° A Origem</strong><br>
+          ⭐⭐⭐⭐✰ (4.8)
+        </li>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
         <a href="clube-da-luta.html">
@@ -73,72 +89,80 @@
             <img src="/assets/clube da luta.png" class="d-block w-100" alt="Banner do filme clube da luta">
             <div class="carousel-caption d-none d-md-block">
               <h5>Clube da Luta</h5>
-              <p>Um homem insatisfeito com sua vida corporativa conhece o misterioso Tyler Durden e juntos criam um clube clandestino que sai de controle.</p>
+              <p>Um homem insatisfeito com sua vida corporativa conhece o misterioso Tyler Durden e juntos criam um
+                clube clandestino que sai de controle.</p>
             </div>
-          </a>
-        </div>
-        <div class="carousel-item">
-          <a href="a-origem.html">
-            <img src="./assets/a-origem.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>A Origem</h5>
-              <p>Um ladrão especializado em invasão de sonhos recebe a missão impossível de implantar uma ideia na mente de alguém, arriscando-se dentro de camadas de realidades.</p>
-            </div>
-          </a>
-        </div>
-        <div class="carousel-item">
-          <a href="interestelar.html">
-
-            <img src="./assets/interestelar.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Interstelar</h5>
-              <p>Em um futuro devastado, uma equipe de astronautas atravessa um buraco de minhoca em busca de um novo lar para a humanidade.</p>
-            </div>
-          </a>
-        </div>
+        </a>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-      </div>
-    </div>
-
-    <div class="container my-4 d-flex justify-content-center gap-3 flex-wrap">
-      <h1><span class="fw-bold">Duvidas</span> frequentes:</h1>
-    </div>
-
-    <div class="container my-4 w-100">
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Os filmes disponíveis têm trailers?
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Sim! Sempre que possível adicionamos um trailer oficial disponível no YouTube. Basta clicar no botão “Assistir Trailer” na página do filme.</div>
+      <div class="carousel-item">
+        <a href="a-origem.html">
+          <img src="./assets/a-origem.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>A Origem</h5>
+            <p>Um ladrão especializado em invasão de sonhos recebe a missão impossível de implantar uma ideia na mente
+              de alguém, arriscando-se dentro de camadas de realidades.</p>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Posso sugerir um filme para ser adicionado?
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Sim! Você pode usar a página de Contato para enviar sugestões de filmes que gostaria de ver no catálogo.</div>
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="interestelar.html">
+
+          <img src="./assets/interestelar.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Interstelar</h5>
+            <p>Em um futuro devastado, uma equipe de astronautas atravessa um buraco de minhoca em busca de um novo lar
+              para a humanidade.</p>
           </div>
+        </a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+
+  <div class="container my-4 d-flex justify-content-center gap-3 flex-wrap">
+    <h1><span class="fw-bold">Duvidas</span> frequentes:</h1>
+  </div>
+
+  <div class="container my-4 w-100">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Os filmes disponíveis têm trailers?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Sim! Sempre que possível adicionamos um trailer oficial disponível no YouTube.
+            Basta clicar no botão “Assistir Trailer” na página do filme.</div>
         </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Posso sugerir um filme para ser adicionado?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Sim! Você pode usar a página de Contato para enviar sugestões de filmes que
+            gostaria de ver no catálogo.</div>
         </div>
       </div>
     </div>
+  </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
 
       const myModal = document.getElementById('myModal')
       const myInput = document.getElementById('myInput')
@@ -147,5 +171,6 @@
         myInput.focus()
       })
     </script>
-  </body>
+</body>
+
 </html>
